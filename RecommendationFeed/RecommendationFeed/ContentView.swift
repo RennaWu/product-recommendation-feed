@@ -1,4 +1,3 @@
-import Combine
 import SwiftUI
 
 // MARK: - Data Model
@@ -363,4 +362,3 @@ class RecommendationViewModel: ObservableObject {
 #Preview {
     ContentView()
 }
-
