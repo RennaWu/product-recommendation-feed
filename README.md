@@ -26,7 +26,7 @@ A full-stack product recommendation feed built with **NestJS + MongoDB** (backen
 
 ### iOS (SwiftUI)
 
-- Dark-themed feed with card-based layout inspired by [Trndzy](https://www.trndzy.app)
+- Light-themed feed with card-based layout inspired by [Trndzy](https://www.trndzy.app)
 - Optimistic UI updates with automatic rollback on failure
 - Relative timestamps ("3h ago", "2d ago")
 - Embedded product link previews
@@ -154,5 +154,5 @@ Returns `404 Not Found` if the ID doesn't exist.
 - **Optimistic UI**: Like count updates instantly on tap, rolls back if the API call fails. This makes the app feel responsive.
 - **Atomic `$inc`**: Uses MongoDB's `$inc` operator instead of read-then-write to prevent race conditions when multiple users like simultaneously.
 - **Component extraction**: `ProductLinkPreview` and `ActionBar` are separate SwiftUI views for reusability and readability.
-- **Dark-first theme**: Designed to match Trndzy's product aesthetic — near-black background (#0A0A0A) with subtle card borders.
+- **Dark-first theme**: Designed to match Trndzy's product aesthetic — white cards with subtle shadows on a soft gray background.
 - **UI placeholders**: Comment, share, and bookmark icons are visual placeholders to demonstrate card design intent. Only the like button is connected to the backend, as specified in the requirements.
